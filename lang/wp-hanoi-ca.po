@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp-hanoi 1.00\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-25 10:31+0100\n"
-"PO-Revision-Date: 2013-05-25 10:32+0100\n"
+"POT-Creation-Date: 2013-05-26 16:50+0100\n"
+"PO-Revision-Date: 2013-05-26 16:52+0100\n"
 "Last-Translator: Efraim Bayarri <efraim.bayarri@gmail.com>\n"
 "Language-Team:  <efraim.bayarri@gmail.com>\n"
 "Language: \n"
@@ -16,16 +16,104 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-SearchPath-0: /var/www/ric-ca/wp-content/plugins/wp-hanoi\n"
 
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:52
+msgid "Main options"
+msgstr "Opcions principals"
+
 #: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:53
-msgid "Opcions WP-HANOI"
-msgstr "Opcions WP-HANOI"
+msgid "Language 1"
+msgstr "Idioma 1"
 
 #: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:54
-msgid "Opcions de configuració i administracio de WP-HANOI"
-msgstr "Opcions de configuració i administracio de WP-HANOI"
+msgid "Description language 1"
+msgstr "Descripció idioma 1"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:55
+msgid "Language 2"
+msgstr "Idioma 2"
 
 #: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:56
-#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:60
-msgid "Desar canvis"
-msgstr "Guardar canvis"
+msgid "Description language 2"
+msgstr "Descripció idioma 2"
 
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:57
+msgid "Language 3"
+msgstr "Idioma 3"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:58
+msgid "Description language 3"
+msgstr "Descripció idioma 3"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:59
+msgid "Language 4"
+msgstr "Idioma 4"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:60
+msgid "Description language 4"
+msgstr "Descripció idioma 4"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:61
+msgid "Language 5"
+msgstr "Idioma 5"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:62
+msgid "Description language 5"
+msgstr "Descripció idioma 5"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:63
+msgid "Language 6"
+msgstr "Idioma 6"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:64
+msgid "Description language 6"
+msgstr "Descripció idioma 6"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:72
+msgid "Language settings."
+msgstr "Configuració d'Idiomes"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:157
+msgid "WP-HANOI settings"
+msgstr "Opcions de WP-HANOI"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:158
+msgid "Settings and administration of WP-Hanoi"
+msgstr "Opcions de configuració i administració de WP-HANOI"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:160
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:164
+msgid "Save changes"
+msgstr "Desar canvis"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:189
+msgid "description for WP-Hanoi Widget"
+msgstr "description for WP-Hanoi Widget"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:207
+msgid "Language: "
+msgstr "Idioma"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:246
+msgid "Change"
+msgstr "Canviar"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:246
+msgid "warning advise"
+msgstr "Avis legal"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:267
+msgid "New title"
+msgstr "Nou titol"
+
+#: /var/www/ric-ca/wp-content/plugins/wp-hanoi/wp-hanoi.php:271
+msgid "Title:"
+msgstr "Titol"
+
+#~ msgid "Opcions WP-HANOI"
+#~ msgstr "Opcions WP-HANOI"
+
+#~ msgid "Opcions de configuració i administracio de WP-HANOI"
+#~ msgstr "Opcions de configuració i administració de WP-HANOI"
+
+#~ msgid "Desar canvis"
+#~ msgstr "Guardar canvis"

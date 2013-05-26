@@ -71,7 +71,7 @@ class translate {
 
 		if(!$word){
 
-			die("you need to adda a translate word");
+			die("you need to add a translate word");
 		}
 		///we need to encode the word that we want to translate
 
