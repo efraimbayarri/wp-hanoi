@@ -289,16 +289,17 @@ function wphanoi_shortcode_init($atts, $content = null) {
 	$local_config = get_locale();
 //		take WP installation language for origin language and change it if 'orig=' is set in shortcode call	
 	$orig = get_locale();
+//		if there is nothing to do -> return
+	if($orig == $_COOKIE['wp-hanoi-cookie'] || isset($atts['dest']) && $orig == $atts['dest'])return($content);
+//	
 	if(isset($atts['orig'])) $orig = $atts['orig'];
 //		take WP installation language for destination language. If destination language is defined in cookies throw wp-hanoi Widget, take it.
 //			if the shortcode has 'dest=', override all and set destination language to it.
 	$dest = get_locale();
 	if(isset($_COOKIE['wp-hanoi-cookie']))$dest = $_COOKIE['wp-hanoi-cookie'];
 	if(isset($atts['dest']))$dest = $atts['dest'];
-//	
-	$var = new translate($orig, $dest);
-	$new_content = $var->get($content);
-	$new_content = str_replace ('</ ', '</', $new_content);
-	return($new_content);
+//
+	$var = new translate($orig,$dest);
 
+	return($var->get($content));
 }
