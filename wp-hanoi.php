@@ -4,7 +4,7 @@
  * Plugin URI: http://replicantsfactory.com/
  * Author: Efraim Bayarri
  * Author URI: http://replicantsfactory.com/
- * Version: 1.002207:1359
+ * Version: 1.002207:1400
  * Description: Projecte localitzacions (git://github.com/efraimbayarri/wp-hanoi.git)
  */
 
