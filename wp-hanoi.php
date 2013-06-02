@@ -4,12 +4,12 @@
  * Plugin URI: http://replicantsfactory.com/
  * Author: Efraim Bayarri
  * Author URI: http://replicantsfactory.com/
- * Version: 1.002207:1400
+ * Version: 1.00201322072011
  * Description: Projecte localitzacions (git://github.com/efraimbayarri/wp-hanoi.git)
  */
 
 require_once(WP_PLUGIN_DIR.'/wp-hanoi/class_translate.php');
-require_once(WP_PLUGIN_DIR.'/ricca3/dump_r.php');
+require_once(WP_PLUGIN_DIR.'/wp-hanoi/dump_r.php');
 
 if (is_admin()){
 	add_action('admin_menu', 'wphanoi_admin_page');
@@ -18,13 +18,17 @@ if (is_admin()){
 add_action( 'plugins_loaded', 'wphanoi_init');
 add_action( 'widgets_init',   'wphanoi_register_widgets' );
 
-add_shortcode( 'wp-hanoi', 'wphanoi_shortcode_init' );
+add_shortcode( 'wp-hanoi',    'wphanoi_shortcode_init' );
+add_shortcode( 'wp-hanoi-ts', 'wphanoi_ts_init' );
 
 // cookie stuf must be done before page loads
 if(isset($_POST['wp-hanoi-option']) && $_POST['wp-hanoi-option'] == 'wp-hanoi_lang'){  
 	setcookie ('wp-hanoi-cookie', $_POST['wp-hanoi-lang'], time()+(60*60*24*30), "/" );
 	$_COOKIE['wp-hanoi-cookie'] = $_POST['wp-hanoi-lang'];
 }
+setcookie ('wp-hanoi-cookie_ts', microtime(true), time()+(60*60*24*30), "/" );
+$_COOKIE['wp-hanoi-cookie_ts'] = microtime(true);
+
 //
 
 #############################################################################################
@@ -302,4 +306,18 @@ function wphanoi_shortcode_init($atts, $content = null) {
 	$var = new translate($orig,$dest);
 
 	return($var->get($content));
+}
+
+
+#############################################################################################
+/**
+ * WP-Hanoi timestamp shortcode 
+ * shortcode: [wp-hanoi-ts]
+ *
+ * @since wWP-Hanoi v 1.002106
+ * @author Efraim Bayarri
+ */
+#############################################################################################
+function wphanoi_ts_init($atts, $content = null) {
+	if(isset($_COOKIE['wp-hanoi-cookie_ts'])) echo microtime(true)-$_COOKIE['wp-hanoi-cookie_ts'];
 }
