@@ -319,5 +319,5 @@ function wphanoi_shortcode_init($atts, $content = null) {
  */
 #############################################################################################
 function wphanoi_ts_init($atts, $content = null) {
-	if(isset($_COOKIE['wp-hanoi-cookie_ts'])) echo microtime(true)-$_COOKIE['wp-hanoi-cookie_ts'];
+	if(isset($_COOKIE['wp-hanoi-cookie_ts'])) printf('%1.4f', microtime(true)-$_COOKIE['wp-hanoi-cookie_ts']);
 }
