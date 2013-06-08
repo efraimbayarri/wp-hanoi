@@ -4,7 +4,7 @@
  * Plugin URI: http://replicantsfactory.com/
  * Author: Efraim Bayarri
  * Author URI: http://replicantsfactory.com/
- * Version: 1.00201323011954
+ * Version: 1.00201323061020
  * Description: Projecte localitzacions (git://github.com/efraimbayarri/wp-hanoi.git)
  */
 
@@ -284,7 +284,7 @@ class WphanoiWidget extends WP_Widget {
  * WP-Hanoi shortcode 
  * shortcode: [wp-hanoi]content[/wp-hanoi]
  *
- * @since wWP-Hanoi v 1.002106
+ * @since WP-Hanoi v 1.002106
  * @author Efraim Bayarri
  */
 #############################################################################################
@@ -308,16 +308,15 @@ function wphanoi_shortcode_init($atts, $content = null) {
 	return($var->get($content));
 }
 
-
 #############################################################################################
 /**
  * WP-Hanoi timestamp shortcode 
  * shortcode: [wp-hanoi-ts]
  *
- * @since wWP-Hanoi v 1.002106
+ * @since WP-Hanoi v 1.002106
  * @author Efraim Bayarri
  */
 #############################################################################################
 function wphanoi_ts_init($atts, $content = null) {
-	if(isset($_COOKIE['wp-hanoi-cookie_ts'])) printf('%1.4f', microtime(true)-$_COOKIE['wp-hanoi-cookie_ts']);
+	if(isset($_COOKIE['wp-hanoi-cookie_ts'])) return(sprintf('%1.4f', microtime(true)-$_COOKIE['wp-hanoi-cookie_ts']));
 }

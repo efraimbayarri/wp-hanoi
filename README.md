@@ -6,6 +6,6 @@ wp-hanoi
  * Plugin URI: http://replicantsfactory.com/
  * Author: Efraim Bayarri
  * Author URI: http://replicantsfactory.com/
- * Version: 1.00201323011954
+ * Version: 1.00201323061020
  * Description: Projecte localitzacions (git://github.com/efraimbayarri/wp-hanoi.git)
  */
